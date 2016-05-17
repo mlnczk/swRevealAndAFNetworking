@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "APIManager.h"
 
 
 @interface ViewController ()
@@ -17,7 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    APIManager *manager = [[APIManager alloc]init];
+    [manager getOperationForAction:@"http://recipecloud-search.td-asp.com/recipes_tr/_search?q=ean:8690629229887&size=100" parameters:nil completion:^(NSURLSessionTask *operation, id responseObject) {
+        NSLog(@"%@", responseObject);
+    } failure:^(NSURLSessionTask *operation, id error) {
+        NSLog(@"%@", error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
