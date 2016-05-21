@@ -9,5 +9,8 @@
 #import "Occasion.h"
 
 @implementation Occasion
-
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
+}
 @end

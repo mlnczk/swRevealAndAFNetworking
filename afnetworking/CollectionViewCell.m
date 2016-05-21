@@ -22,7 +22,8 @@
 
 -(void)modellingThings:(Source *)source{
     self.labelTitle.text = source.title;
-    self.imageView.image = [UIImage imageNamed:source.image_small];
+    //OBRAZEK Z URL//
+    self.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:source.image_small]]];
 
 }
 

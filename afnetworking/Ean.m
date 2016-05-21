@@ -9,5 +9,8 @@
 #import "Ean.h"
 
 @implementation Ean
-
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
+}
 @end

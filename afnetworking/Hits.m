@@ -9,5 +9,8 @@
 #import "Hits.h"
 
 @implementation Hits
-
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
+}
 @end

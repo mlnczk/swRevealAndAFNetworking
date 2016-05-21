@@ -9,5 +9,8 @@
 #import "Source.h"
 
 @implementation Source
-
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
+}
 @end

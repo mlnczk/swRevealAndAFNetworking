@@ -9,5 +9,8 @@
 #import "Kategoria.h"
 
 @implementation Kategoria
-
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
+}
 @end

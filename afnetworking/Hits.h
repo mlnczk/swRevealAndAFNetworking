@@ -15,11 +15,11 @@
 
 @end
 @interface Hits : JSONModel
-@property (nonatomic, strong)NSString *_type;
+//@property (nonatomic, strong)NSString *_type;
 @property (nonatomic, strong)NSString *_index;
 @property (nonatomic, strong)NSString *_id;
-@property (nonatomic, strong)NSArray<Source> *_source;
-@property (nonatomic, assign)NSInteger *_score;
+@property (nonatomic, strong)Source *_source;
+//@property (nonatomic, assign)NSInteger *_score;
 
 
 @end

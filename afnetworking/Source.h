@@ -35,7 +35,7 @@
 @property (nonatomic, strong)NSString *difficulty;
 @property (nonatomic, strong)NSString *country;
 @property (nonatomic, strong)NSArray<Videos> *videos;
-@property (nonatomic, assign)BOOL *has_video;
+@property (nonatomic, assign)NSNumber *has_video;
 
 
 @end

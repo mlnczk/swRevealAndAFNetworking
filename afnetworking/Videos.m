@@ -9,5 +9,8 @@
 #import "Videos.h"
 
 @implementation Videos
-
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
+}
 @end

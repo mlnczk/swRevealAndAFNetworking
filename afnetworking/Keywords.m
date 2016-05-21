@@ -9,5 +9,8 @@
 #import "Keywords.h"
 
 @implementation Keywords
-
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
+}
 @end
