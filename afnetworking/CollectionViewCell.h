@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  CollectionViewCell.h
 //  afnetworking
 //
 //  Created by Marcin Mielniczek on 5/21/16.
@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Source.h"
 
-@interface AppDelegate: UIResponder <UIApplicationDelegate>
+@interface CollectionViewCell : UICollectionViewCell
 
-
-@property (strong, nonatomic)  UIWindow *window;
+-(void)modellingThings:(Source *)source;
 
 @end
-

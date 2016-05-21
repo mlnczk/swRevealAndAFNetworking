@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="196"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="301" height="196"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAC-A1-lOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="196"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="BAC-A1-lOZ" secondAttribute="height" multiplier="43:28" id="HXh-3w-y8v"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXG-5x-eUo">
+                        <rect key="frame" x="0.0" y="8" width="301" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="YV1-8R-Bsg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BAC-A1-lOZ" secondAttribute="bottom" id="23J-gH-Ead"/>
+                <constraint firstItem="BAC-A1-lOZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Bg4-ih-Fe1"/>
+                <constraint firstItem="nXG-5x-eUo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="SGw-Wl-jQw"/>
+                <constraint firstAttribute="trailing" secondItem="nXG-5x-eUo" secondAttribute="trailing" id="Ur4-kS-ftM"/>
+                <constraint firstItem="BAC-A1-lOZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hiW-TY-hkd"/>
+                <constraint firstAttribute="trailing" secondItem="BAC-A1-lOZ" secondAttribute="trailing" id="pFg-h8-j9M"/>
+                <constraint firstItem="nXG-5x-eUo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wYj-Z8-Hpe"/>
+            </constraints>
+            <size key="customSize" width="301" height="196"/>
+            <connections>
+                <outlet property="imageView" destination="BAC-A1-lOZ" id="18D-VB-F9n"/>
+                <outlet property="labelTitle" destination="nXG-5x-eUo" id="eHU-bc-5iT"/>
+            </connections>
+            <point key="canvasLocation" x="539.5" y="319"/>
+        </collectionViewCell>
+    </objects>
+</document>
